@@ -12,11 +12,12 @@ Sintaxis: [inicio:fin:paso]
 
 Extrae desde inicio hasta fin-1 (fin NO se incluye)
 
-Ejemplo:
+```python
 texto = "Python"
 texto[1:4]      # "yth"  (índices 1, 2, 3)
 texto[:3]       # "Pyt"  (desde el inicio hasta índice 2)
 texto[3:]       # "hon"  (desde índice 3 hasta el final)
+```
 
 ---
 
@@ -24,10 +25,12 @@ texto[3:]       # "hon"  (desde índice 3 hasta el final)
 
 Los índices negativos cuentan desde el final:
 
+```python
 texto = "Python"
 texto[-1]       # "n"    (último carácter)
 texto[-3:]      # "hon"  (últimos 3 caracteres)
 texto[:-1]      # "Pytho" (todo excepto el último)
+```
 
 ---
 
@@ -35,6 +38,7 @@ texto[:-1]      # "Pytho" (todo excepto el último)
 
 El paso controla cada cuántos elementos tomar:
 
+```python
 texto = "Python"
 
 # Paso positivo (hacia adelante)
@@ -43,6 +47,7 @@ texto[1::2]     # "yhn"   (desde índice 1, cada 2)
 
 # Paso negativo (invierte)
 texto[::-1]     # "nohtyP" (INVIERTE la cadena)
+```
 
 ---
 
@@ -71,6 +76,7 @@ texto[::-1]     # "nohtyP" (INVIERTE la cadena)
 
 ## Ejemplo Práctico
 
+```python
 palabra = "Hola"
 
 # Invertir una palabra
@@ -81,11 +87,13 @@ palabra[::2]            # "Hl"
 
 # Excluir primero y último
 palabra[1:-1]           # "ol"
+```
 
 ---
 
 ## Casos de Uso Comunes
 
+```python
 # Primeros 3 elementos
 lista = [1, 2, 3, 4, 5]
 lista[:3]               # [1, 2, 3]
@@ -101,3 +109,4 @@ lista[::-1]             # [5, 4, 3, 2, 1]
 
 # Cada 2 elementos
 lista[::2]              # [1, 3, 5]
+```
